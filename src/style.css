@@ -1,9 +1,18 @@
 body {
-  font-family: "Noto Sans JP", sans-serif;
-  font-family: "Open Sans", sans-serif;
+  --main-heading: "Playfair Display", serif;
+  --secondary-heading: "Poppins", sans-serif;
   --text-align: center;
   --border: 1.5px solid;
   --border-radius: 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--main-heading);
 }
 
 .container {
@@ -11,28 +20,71 @@ body {
   padding: 0;
 }
 
+.main-window {
+  background: #f9f7fe;
+}
+
+.navbar {
+  background-color: #f9f7fe;
+}
+
+.heading {
+  padding: 50px 0 150px;
+}
+
 nav a {
   box-shadow: none;
+  font-family: var(--secondary-heading);
+  font-size: 16px;
+  padding: 0 50px;
+}
+
+.navbar-light .navbar-brand {
+  color: #272142b2;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #6c63ff;
+}
+
+.navbar-collapse {
+  text-align: end;
+  max-width: max-content;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #272142b2;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #6c63ff;
+}
+
+.navbar-light .navbar-toggler {
+  color: #6c63ff;
 }
 
 .ua-heading {
+  font-family: var(--secondary-heading);
   text-align: var(--text-align);
   font-weight: bolder;
-  margin: 60px 0 10px;
-  font-size: 35px;
+  margin: 60px 0 0;
+  font-size: 36px;
 }
 
 .main-heading {
   text-align: var(--text-align);
   font-weight: bolder;
-  font-size: 80px;
-  margin: 30px 0;
+  font-size: 96px;
+  margin: 0 0 24px;
 }
 
 .info-heading {
+  font-family: var(--secondary-heading);
   text-align: var(--text-align);
-  color: royalblue;
-  margin-bottom: 20px;
+  color: #272142;
+  margin-bottom: 24px;
+  font-size: 24px;
 }
 
 .links {
@@ -50,8 +102,9 @@ a {
 }
 
 .contact-me {
-  background: royalblue;
+  background: #6c63ff;
   color: white;
+  padding: 18px 30px;
   transition: all 150ms ease-in-out;
   border: var(--border) royalblue;
   text-decoration: none;
@@ -59,21 +112,23 @@ a {
 
 .contact-me:hover {
   background: white;
-  color: royalblue;
-  border: var(--border) royalblue;
+  color: #6c63ff;
+  border: var(--border) #6c63ff;
 }
 
 .about {
-  color: royalblue;
+  background: #6c63ff;
+  color: white;
+  padding: 18px 30px;
   transition: all 150ms ease-in-out;
   border: var(--border) royalblue;
   text-decoration: none;
 }
 
 .about:hover {
-  background: royalblue;
-  color: white;
-  border: var(--border) royalblue;
+  background: white;
+  color: #6c63ff;
+  border: var(--border) #6c63ff;
 }
 
 .about-me {
