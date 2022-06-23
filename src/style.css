@@ -49,7 +49,7 @@ nav a {
 
 .navbar-collapse {
   text-align: end;
-  max-width: max-content;
+  flex-direction: row-reverse;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -131,6 +131,28 @@ a {
   border: var(--border) #6c63ff;
 }
 
+img {
+  width: 500px;
+}
+
+.project-description .project-label {
+  font-size: 64px;
+  line-height: 85.31px;
+}
+
+.project-text {
+  color: #272142b2;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.project-button {
+  font-size: 16px;
+  color: #6c63ff;
+  background-color: white;
+  border: 1px solid #6c63ff;
+}
+
 .about-me {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: bold;
@@ -149,6 +171,8 @@ a {
 .description {
   text-align: center;
   padding: 0;
+  font-size: 18px;
+  color: #272142;
 }
 
 .contact-section {
@@ -172,30 +196,47 @@ a {
   text-decoration: underline;
 }
 
-.project-button {
-  background: royalblue;
+@media (max-width: 985px) {
+  .project-description {
+    text-align: center;
+  }
 }
 
 @media (max-width: 576px) {
   .ua-heading {
     font-size: 30px;
-    margin: 60px 10px 10px;
+    margin: 10px 10px;
   }
 
   .main-heading {
-    font-size: 50px;
-    margin: 30px 10px;
+    font-size: 40px;
+    margin: 10px 10px;
+  }
+
+  .info-heading {
+    font-size: 15px;
+    margin: 20px 0 0;
+  }
+
+  .description {
+    font-size: 15px;
   }
 
   .portfolio .projects {
     display: block;
+    margin: 0;
     text-align: var(--text-align);
   }
-  .portfolio .project-description {
-    display: inline;
-    margin: 0 10px;
-  }
 
+  .portfolio .project-description {
+    text-align: center;
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  .project-description .project-label {
+    font-size: 35px;
+  }
   .portfolio .project-description .project-text {
     margin: 0 10px;
   }
