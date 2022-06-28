@@ -117,21 +117,6 @@ a {
   border: var(--border) #6c63ff;
 }
 
-/* .about {
-  background: #6c63ff;
-  color: white;
-  padding: 18px 30px;
-  transition: all 150ms ease-in-out;
-  border: var(--border) royalblue;
-  text-decoration: none;
-}
-
-.about:hover {
-  background: white;
-  color: #6c63ff;
-  border: var(--border) #6c63ff;
-} */
-
 .project-pic {
   width: 500px;
 }
@@ -154,17 +139,18 @@ a {
   border: 1px solid #6c63ff;
 }
 
-.about-section {
-  padding: 120px 40px;
+.content-container {
+  padding: 120px 60px;
 }
 
-.about-section-content {
+.content {
   margin: 30px;
 }
 
-.about-me {
+.content-heading {
   font-size: 64px;
   line-height: 85.31px;
+  max-width: 700px;
 }
 
 .about-heading {
@@ -182,12 +168,28 @@ a {
 }
 
 .portfolio-photo {
-  padding: 0 0 0 40px;
+  padding: 0 0 0 0px;
 }
 
 .photo {
   height: 500px;
   width: 500px;
+  border-radius: 20px;
+}
+
+.work-heading {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 36px;
+  margin: 15px 0 5px;
+}
+
+.work-description {
+  font-size: 14px;
+  line-height: 21px;
+  color: #272142b2;
+}
+.work-pic {
   border-radius: 20px;
 }
 
@@ -217,12 +219,12 @@ a {
     text-align: center;
   }
 
-  .about-section {
+  .content-container {
     text-align: var(--text-align);
     padding: 0;
   }
 
-  .about-me {
+  .heading {
     font-size: 54px;
   }
 
@@ -233,6 +235,11 @@ a {
   .photo {
     height: 350px;
     max-width: 350px;
+  }
+
+  .content-heading {
+    font-size: 44px;
+    line-height: 50px;
   }
 }
 
