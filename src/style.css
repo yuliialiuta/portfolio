@@ -56,11 +56,9 @@ nav a {
   color: #272142b2;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
-  color: #6c63ff;
-}
-
-.navbar-light .navbar-toggler {
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-toggler,
+.navbar-light .navbar-nav .nav-link.active {
   color: #6c63ff;
 }
 
@@ -85,6 +83,10 @@ nav a {
   color: #272142;
   margin-bottom: 24px;
   font-size: 24px;
+}
+
+.description {
+  text-align: var(--text-align);
 }
 
 .links {
@@ -160,7 +162,7 @@ a {
   padding: 0;
 }
 
-.description {
+.about-description {
   padding: 0;
   font-size: 16px;
   color: #272142b2;
@@ -192,27 +194,6 @@ a {
 .work-pic {
   border-radius: 20px;
 }
-
-/* .contact-section {
-  display: inline;
-  text-align: var(--text-align);
-}
-.contact-section h1 {
-  font-size: 50px;
-  margin: 0;
-}
-
-.contact-section a {
-  display: block;
-  margin: 10px auto;
-  padding: 0 0 20px;
-  box-shadow: none;
-  font-size: 25px;
-}
-
-.contact-section a:hover {
-  text-decoration: underline;
-} */
 
 .contacts a {
   text-decoration: none;
