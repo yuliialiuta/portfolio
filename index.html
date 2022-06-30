@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Yuliia Liuta - Personal Portfolio</title>
-    <meta name="description" content="here you can find my projects" />
+    <meta
+      name="description"
+      content="Yuliia Liuta - front-end developer from Ukraine"
+    />
     <script
       src="https://kit.fontawesome.com/082aff20db.js"
       crossorigin="anonymous"
@@ -26,35 +29,45 @@
   </head>
   <body>
     <div class="container">
-      <div class="main-window">
-        <nav class="navbar navbar-expand-lg sticky-top navbar-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-              <img src="./pictures/sheCodesLogo.svg" alt="logo" />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Home</a
-                >
-                <a class="nav-link" href="about.html">About</a>
-                <a class="nav-link" href="work.html">Work</a>
-                <a class="nav-link" href="contact.html">Contact</a>
-              </div>
+      <nav class="navbar navbar-expand-lg sticky-top navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="./pictures/sheCodesLogo.svg" alt="SheCodes logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="index.html"
+                title="Homepage"
+                >Home</a
+              >
+              <a class="nav-link" href="about.html" title="About Yuliia"
+                >About</a
+              >
+              <a class="nav-link" href="work.html" title="Yuliia's works"
+                >Work</a
+              >
+              <a class="nav-link" href="contact.html" title="Contact Yuliia"
+                >Contact</a
+              >
             </div>
           </div>
-        </nav>
+        </div>
+      </nav>
+      <div class="main-window">
         <div class="heading">
           <p class="ua-heading">Hi I'm</p>
           <h1 class="main-heading">Yuliia Liuta</h1>
@@ -88,9 +101,13 @@
               they live in Bookmarksgrove right at the coast of the Semantics, a
               large language ocean. A small river named Duden flows by
             </p>
-            <button title="Launch Yoga App" class="btn p-3 project-button">
+            <a
+              href="/work.html"
+              title="Launch Yoga App"
+              class="btn p-3 project-button"
+            >
               Launch Yoga App
-            </button>
+            </a>
           </div>
         </div>
         <div class="row m-md-5 p-3 projects">
@@ -102,9 +119,13 @@
               they live in Bookmarksgrove right at the coast of the Semantics, a
               large language ocean. A small river named Duden flows by
             </p>
-            <button title="Launch Weather App" class="btn p-3 project-button">
+            <a
+              href="/work.html"
+              title="Launch Weather App"
+              class="btn p-3 project-button"
+            >
               Launch Weather App
-            </button>
+            </a>
           </div>
           <div class="col d-none d-lg-block project-img">
             <img
@@ -130,9 +151,13 @@
               they live in Bookmarksgrove right at the coast of the Semantics, a
               large language ocean. A small river named Duden flows by
             </p>
-            <button title="Launch Yogurt App" class="btn p-3 project-button">
+            <a
+              href="/work.html"
+              title="Launch Yogurt App"
+              class="btn p-3 project-button"
+            >
               Launch Yogurt App
-            </button>
+            </a>
           </div>
         </div>
 
@@ -141,17 +166,23 @@
             <div class="work-inquiry d-none d-md-block">
               <div class="row">
                 <div class="col-md-9">
-                  <h4>Work Inquiry</h4>
+                  <h3>Work Inquiry</h3>
                   <p>Let's work together and I'll help you by all my best</p>
                 </div>
                 <div class="col-md-3 contact-button">
-                  <a href="" class="btn py-3 px-4">Let's talk here</a>
+                  <a href="/contact.html" class="btn py-3 px-4"
+                    >Let's talk here</a
+                  >
                 </div>
               </div>
             </div>
             <div class="contacts-section">
               <div class="email text-center mt-5 mb-5 shadow-none">
-                <a href="mailto:kirstya.julia@gmail.com" target="_blank">
+                <a
+                  href="mailto:kirstya.julia@gmail.com"
+                  title="Email"
+                  target="_blank"
+                >
                   kirstya.julia@gmail.com
                 </a>
               </div>
@@ -160,6 +191,7 @@
                   href="https://www.linkedin.com/in/yuliia-liuta/"
                   class="linkedin"
                   target="_blank"
+                  title="LinkedIn Profile"
                 >
                   <i class="fa-brands fa-linkedin text-center"></i>
                 </a>
@@ -167,16 +199,27 @@
                   href="https://github.com/yuliialiuta"
                   class="github"
                   target="_blank"
+                  title="GitHub Profile"
                 >
-                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                  <i class="fa-brands fa-github"></i>
                 </a>
                 <a
                   href="https://www.instagram.com/luta_yuliia/"
                   target="_blank"
+                  title="Instagram Profile"
                 >
                   <i class="fa-brands fa-instagram"></i>
                 </a>
               </div>
+              <p class="author text-center mt-5">
+                This website was coded by Yuliia Liuta and is<a
+                  href="https://github.com/yuliialiuta/portfolio"
+                  target="_blank"
+                  class="p-0 m-1"
+                  title="Link to GitHub Repository"
+                  >open-soursed</a
+                >
+              </p>
             </div>
           </footer>
         </div>

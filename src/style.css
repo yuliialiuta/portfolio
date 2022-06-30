@@ -108,6 +108,7 @@ a {
 .btn {
   background: #6c63ff;
   color: white;
+  box-shadow: none;
   font-weight: bold;
   padding: 18px 30px;
   transition: all 150ms ease-in-out;
@@ -212,7 +213,7 @@ footer .work-inquiry {
   text-align: left;
 }
 
-.work-inquiry h4 {
+.work-inquiry h3 {
   font-size: 48px;
 }
 
@@ -263,6 +264,10 @@ footer .social-links .linkedin {
 footer .social-links a:hover {
   color: white;
   background-color: var(--branding-color);
+}
+
+footer .author {
+  font-family: var(--secondary-heading);
 }
 
 @media (max-width: 985px) {
