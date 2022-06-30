@@ -4,6 +4,8 @@ body {
   --text-align: center;
   --border: 1.5px solid;
   --border-radius: 5px;
+  --branding-color: #6c63ff;
+  --secondary-color: #f9f7fe;
 }
 
 h1,
@@ -142,7 +144,7 @@ a {
 }
 
 .content-container {
-  padding: 120px 60px;
+  padding: 120px 60px 40px;
 }
 
 .content {
@@ -195,10 +197,74 @@ a {
   border-radius: 20px;
 }
 
-.contacts a {
+footer {
+  padding: 60px 0 0;
+}
+footer .contacts a {
   text-decoration: none;
   box-shadow: none;
 }
+
+footer .work-inquiry {
+  background-color: var(--secondary-color);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: left;
+}
+
+.work-inquiry h4 {
+  font-size: 48px;
+}
+
+.work-inquiry p {
+  margin: 15px 0 0;
+  font-size: 18px;
+  color: #272142b2;
+}
+
+footer .contact-button {
+  margin: auto 0;
+}
+
+footer .contacts-section a {
+  box-shadow: none;
+}
+
+footer .email a {
+  font-family: var(--secondary-heading);
+  font-weight: 500;
+  font-size: 24px;
+  color: black;
+  transition: all 150ms ease-in-out;
+}
+
+footer .email a:hover {
+  color: var(--branding-color);
+}
+
+footer .social-links a {
+  padding: 10px 14px;
+  margin: 0 15px;
+  border-radius: 50px;
+  font-size: 18px;
+  color: var(--branding-color);
+  background-color: var(--secondary-color);
+  transition: all 150ms ease-in-out;
+}
+
+footer .social-links .github {
+  padding: 10px 10px 10px 14px;
+}
+
+footer .social-links .linkedin {
+  padding: 10px 10px 10px 14px;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background-color: var(--branding-color);
+}
+
 @media (max-width: 985px) {
   .project-description {
     text-align: center;
