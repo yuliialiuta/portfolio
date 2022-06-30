@@ -214,6 +214,10 @@ a {
   text-decoration: underline;
 } */
 
+.contacts a {
+  text-decoration: none;
+  box-shadow: none;
+}
 @media (max-width: 985px) {
   .project-description {
     text-align: center;
